@@ -24,7 +24,7 @@ const hariini = moment.tz('Asia/Jakarta').format('dddd, DD MMMM YYYY')
 const barat = moment.tz('Asia/Jakarta').format('HH:mm:ss')
 const tengah = moment.tz('Asia/Makassar').format('HH:mm:ss')
 const timur = moment.tz('Asia/Jayapura').format('HH:mm:ss')
-const nyoutube = ('© Maxxy\nYoutube/Sc :\nhttps://youtube.com/channel/UC6GPl9xMWL61NAXQb3HBrRw')  //ubah di config biar ngk emror
+const nyoutube = ('© BotShin 3.5.0')  //ubah di config biar ngk emror
 const ini_mark = `0@s.whatsapp.net`
 const ownernya = ownernomer + '@s.whatsapp.net'
 
@@ -82,11 +82,11 @@ module.exports = naze = async (naze, m, chatUpdate, store) => {
      
 	 
 	    //Fake
-	    const ftroli ={key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "status@broadcast"}, "message": {orderMessage: {itemCount: 2022,status: 200, thumbnail: thumb, surface: 200, message: '©Naze', orderTitle: 'memek', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
-		const fdoc = {key : {participant : '0@s.whatsapp.net', ...(m.chat ? { remoteJid: `status@broadcast` } : {}) },message: {documentMessage: {title: '©Naze',jpegThumbnail: thumb}}}
+	    const ftroli ={key: {fromMe: false,"participant":"0@s.whatsapp.net", "remoteJid": "status@broadcast"}, "message": {orderMessage: {itemCount: 2022,status: 200, thumbnail: thumb, surface: 200, message: '© BotShin', orderTitle: 'memek', sellerJid: '0@s.whatsapp.net'}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true}
+		const fdoc = {key : {participant : '0@s.whatsapp.net', ...(m.chat ? { remoteJid: `status@broadcast` } : {}) },message: {documentMessage: {title: '© BotShin',jpegThumbnail: thumb}}}
 		const fvn = {key: {participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "status@broadcast" } : {})},message: { "audioMessage": {"mimetype":"audio/ogg; codecs=opus","seconds":359996400,"ptt": "true"}} } 
-		const fgif = {key: {participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "status@broadcast" } : {})},message: {"videoMessage": { "title":'©Naze', "h": `Hmm`,'seconds': '359996400', 'gifPlayback': 'true', 'caption': '©Naze', 'jpegThumbnail': thumb}}}
-		const fgclink = {key: {participant: "0@s.whatsapp.net","remoteJid": "0@s.whatsapp.net"},"message": {"groupInviteMessage": {"groupJid": "6288213840883-1616169743@g.us","inviteCode": "m","groupName": "YT Naze", "caption": '©Naze', 'jpegThumbnail': thumb}}}
+		const fgif = {key: {participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "status@broadcast" } : {})},message: {"videoMessage": { "title":'©Naze', "h": `Hmm`,'seconds': '359996400', 'gifPlayback': 'true', 'caption': '© BotShin', 'jpegThumbnail': thumb}}}
+		const fgclink = {key: {participant: "0@s.whatsapp.net","remoteJid": "0@s.whatsapp.net"},"message": {"groupInviteMessage": {"groupJid": "6288213840883-1616169743@g.us","inviteCode": "m","groupName": "YT Naze", "caption": '© BotShin', 'jpegThumbnail': thumb}}}
 		const fvideo = {key: { fromMe: false,participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: "status@broadcast" } : {}) },message: { "videoMessage": { "title":`${pushname}`, "h": `Hmm`,'seconds': '359996400', 'caption': `${pushname}`, 'jpegThumbnail': thumb}}}
 		const floc = {key : {participant : '0@s.whatsapp.net', ...(m.chat ? { remoteJid: `status@broadcast` } : {}) },message: {locationMessage: {name: 'Naze Dev',jpegThumbnail: thumb}}}
 		const fkontak = { key: {participant: `0@s.whatsapp.net`, ...(m.chat ? { remoteJid: `status@broadcast` } : {}) }, message: { 'contactMessage': { 'displayName': 'Naze Dev', 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;Naze Dev,;;;\nFN:Naze Dev\nitem1.TEL;waid=6285875158363:6285875158363\nitem1.X-ABLabel:Ponsel\nEND:VCARD`, 'jpegThumbnail': thumb, thumbnail: thumb,sendEphemeral: true}}}
@@ -491,7 +491,7 @@ klik https://wa.me/${botNumber.split`@`[0]}`, m, { mentions: [roof.p, roof.p2] }
             if (!afkTime || afkTime < 0) continue
             let reason = user.afkReason || ''
             m.reply(`
-Jangan tag dia!
+Sssttt!🤫
 Dia sedang AFK ${reason ? 'dengan alasan ' + reason : 'tanpa alasan'}
 Selama ${clockString(new Date - afkTime)}
 `.trim())
@@ -978,7 +978,7 @@ Ketik *nyerah* untuk menyerah dan mengakui kekalahan`
                 if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
-let teks = `══✪〘 *👥 Tag All* 〙✪══
+let teks = `══✪〘 *👥 Tag Semua Orang* 〙✪══
  
  ➲ *Pesan : ${q ? q : 'kosong'}*\n\n`
                 for (let mem of participants) {
@@ -2104,7 +2104,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
                 n = anu.result
                 result = n[Math.floor(Math.random() * n.length)]
                 let jwbn = `*Nama : ${result.nama}\n*Link : ${result.link}*`
-		let buttons = [{ buttonId: `gcsearch ${text}`, buttonText: { displayText: 'Next' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
+		let buttons = [{ buttonId: `gcsearch ${text}`, buttonText: { displayText: 'Next' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: 'ᕙDonasi⁠ᕗ' }, type: 1 }]
             await naze.sendButtonText(m.chat, buttons, jwbn, nyoutube, m, {quoted: fgclink})
             }
             break
@@ -2891,7 +2891,7 @@ let kominfo = `6285380166282@s.whatsapp.net`
 let alfamart = `6285380166282@s.whatsapp.net`
             let ownernya = ownernomer + '@s.whatsapp.net'
             let me = m.sender
-            let jawab = `*Bot by Kahfi-XD* 
+            let jawab = `*Bot by Mos* 
 -Creator :  @${ownernya.split('@')[0]}\n-Lu : @${me.split('@')[0]}\n-Powered  : @${ini_mark.split('@')[0]}\n- :  @${qontak.split('@')[0]}\n- :  @${dana.split('@')[0]}\n- :  @${shopeeotp.split('@')[0]}\n- :  @${shopee.split('@')[0]}\n- :  @${tokopedia.split('@')[0]}\n- :  @${smartfrend.split('@')[0]}\n- :  @${getcontact.split('@')[0]}\n- :  @${facebook.split('@')[0]}\n- :  @${pasarpolis.split('@')[0]}\n- :  @${getcontact.split('@')[0]}\n- :  @${kominfo.split('@')[0]}\n- :  @${alfamart.split('@')[0]}`
             let ments = [ownernya, me, ini_mark, qontak, dana, shopeeotp, shopee, tokopedia, smartfrend, getcontact, facebook, pasarpolis, kominfo, alfamart]
             let buttons = [
@@ -2910,7 +2910,7 @@ let alfamart = `6285380166282@s.whatsapp.net`
 ├ *Premium* : ${isPremium ? '✅' : `❌`}
 ├ *Limit* : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
 ╰──❍
-
+ᕙ۝⁠ᕗᕙ۝⁠ᕗᕙ۝⁠ᕗ…⁠ᘛ⁠⁐̤⁠ᕐ⁠ᐷ…⁠ᕙ۝⁠ᕗᕙ۝⁠ᕗᕙ۝⁠ᕗ
 ╭──❍「 𝙄𝙉𝙁𝙊 𝘽𝙊𝙏 」❍
 ├ *Nama Bot* : ${pushname}
 ├ *Powered* : @${ini_mark.split('@')[0]}
@@ -2920,7 +2920,7 @@ let alfamart = `6285380166282@s.whatsapp.net`
 ├ *Total Hit* : ${jumlahcmd}
 ├ *Total Hit Today* : ${jumlahharian}
 ╰──❍
-
+ᕙ۝⁠ᕗᕙ۝⁠ᕗᕙ۝⁠ᕗ…⁠ᘛ⁠⁐̤⁠ᕐ⁠ᐷ…⁠ᕙ۝⁠ᕗᕙ۝⁠ᕗᕙ۝⁠ᕗ
 ╭──❍「 𝙄𝙉𝘿𝙊𝙉𝙀𝙎𝙄𝘼𝙉 𝙏𝙄𝙈𝙀 」❍
 ├ *Hari Ini* : ${hariini}
 ├ *Wib* : ${barat} WIB
@@ -2928,7 +2928,7 @@ let alfamart = `6285380166282@s.whatsapp.net`
 ├ *Wit* : ${timur} WIT
 ╰──❍`
             let ments = [ownernya, me, ini_mark]
-            let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: '📖List Menu' }, type: 1 },{ buttonId: 'rules', buttonText: { displayText: '❗Rules' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
+            let buttons = [{ buttonId: 'allmenu', buttonText: { displayText: '📖 List Menu' }, type: 1 },{ buttonId: 'rules', buttonText: { displayText: 'ᕙRules⁠ᕗ' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: 'ᕙDonasi⁠ᕗ' }, type: 1 }]
             await naze.sendButtonText(m.chat, buttons, jawab, nyoutube, m, {mentions: ments, quoted: fkontak})
             }
             break
@@ -2943,7 +2943,7 @@ let alfamart = `6285380166282@s.whatsapp.net`
 ├ *Premium* : ${isPremium ? '✅' : `❌`}
 ├ *Limit* : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
 ╰──❍
-
+ᕙ۝⁠ᕗᕙ۝⁠ᕗᕙ۝⁠ᕗ…⁠ᘛ⁠⁐̤⁠ᕐ⁠ᐷ…⁠ᕙ۝⁠ᕗᕙ۝⁠ᕗᕙ۝⁠ᕗ
 ╭──❍「 𝙄𝙉𝙁𝙊 𝘽𝙊𝙏 」❍
 ├ *Nama Bot* : ${pushname}
 ├ *Mode* : ${naze.public ? 'Public' : `Self`}
@@ -2951,7 +2951,7 @@ let alfamart = `6285380166282@s.whatsapp.net`
 ├ *Total Hit* : ${jumlahcmd}
 ├ *Total Hit Today* : ${jumlahharian}
 ╰──❍
-
+ᕙ۝⁠ᕗᕙ۝⁠ᕗᕙ۝⁠ᕗ…⁠ᘛ⁠⁐̤⁠ᕐ⁠ᐷ…⁠ᕙ۝⁠ᕗᕙ۝⁠ᕗᕙ۝⁠ᕗ
 ╭──❍「 𝙄𝙉𝘿𝙊𝙉𝙀𝙎𝙄𝘼𝙉 𝙏𝙄𝙈𝙀 」❍
 ├ *Hari Ini* : ${hariini}
 ├ *Wib* : ${barat} WIB
@@ -2986,7 +2986,7 @@ let alfamart = `6285380166282@s.whatsapp.net`
             }
             break
             case 'mgroup': {
-goup = `┌──⭓ *Group Menu*
+goup = `┌──⭓ *Groups Menu*
 │
 │⭔ ${prefix}linkgroup
 │⭔ ${prefix}ephemeral [option]
@@ -3681,7 +3681,7 @@ let buttons = [{ buttonId: 'simplemenu', buttonText: { displayText: '⬅️Back'
 │⭔ ${prefix}setmenu [option]
 │
 └───────⭓
-_Donasi Ngab_\n_Jangan Ngarep Free Mulu_`
+`
                 let buttons = [{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 },{ buttonId: 'rules', buttonText: { displayText: '❗Rules' }, type: 1 }]
             await naze.sendButtonText(m.chat, buttons, anu, nyoutube, m, {mentions: ments, quoted: fkontak})
             }
